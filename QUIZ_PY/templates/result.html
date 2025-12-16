@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="quiz-container">
+    <div class="quiz-title">Python Quiz Result</div>
+
+    <p><b>Name:</b> {{ name }}</p>
+    <p><b>Roll No:</b> {{ roll }}</p>
+    <p><b>Class:</b> {{ class_name }}</p>
+
+    <h2>Score: {{ score }} / {{ total }}</h2>
+
+    <a href="/">
+        <button>Restart Quiz</button>
+    </a>
+</div>
+
+</body>
+</html>

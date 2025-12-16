@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #a8aac2, #a676aa);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cc9a9a;
+}
+
+.quiz-container {
+    background: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.quiz-title {
+    font-size: 28px;
+    color: #c33764;
+    margin-bottom: 10px;
+}
+
+.progress {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #f7e6ef;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #c33764;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a82b54;
+}
+/* -------- LOGIN PAGE ONLY -------- */
+
+.login-container {
+    background: white;
+    width: 380px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.login-title {
+    font-size: 32px;        /* increased font size */
+    color: #6a0572;         /* changed color */
+    margin-bottom: 25px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;        /* slightly bigger */
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;        /* bigger button text */
+    background: #c33764;    /* pink shade */
+    border: none;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #a82b54;
+}
+

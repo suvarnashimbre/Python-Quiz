@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="quiz-container">
+    <div class="quiz-title">Python Quiz</div>
+
+    <div class="progress">
+        Question {{ qno }} / {{ total }}
+    </div>
+
+    <div class="question">
+        {{ question.q }}
+    </div>
+
+    <form method="post">
+        {% for opt in question.options %}
+        <label class="option">
+            <input type="radio" name="option" value="{{ opt }}" required>
+            {{ opt }}
+        </label>
+        {% endfor %}
+
+        <button type="submit">Submit & Next</button>
+    </form>
+</div>
+
+</body>
+</html>
